@@ -28,10 +28,6 @@ $(document).ready(function () {
             {
                 msg.text = "I like to have fun";
             }
-            if (selectedTab === 'learn')
-            {
-                msg.text = "I like to learn";
-            }
             if (selectedTab === 'people')
             {
                 msg.text = "I like to meet people";
@@ -73,10 +69,6 @@ $(document).ready(function () {
             if (selectedTab === 'fun')
             {
                 msg.text = "I don't like to have fun";
-            }
-            if (selectedTab === 'learn')
-            {
-                msg.text = "I don't like to learn";
             }
             if (selectedTab === 'people')
             {
@@ -120,10 +112,6 @@ $(document).ready(function () {
             {
                 msg.text = "I want to have fun";
             }
-            if (selectedTab === 'learn')
-            {
-                msg.text = "I want to learn";
-            }
             if (selectedTab === 'people')
             {
                 msg.text = "I want to meet people";
@@ -165,10 +153,6 @@ $(document).ready(function () {
             if (selectedTab === 'fun')
             {
                 msg.text = "I don't want to have fun";
-            }
-            if (selectedTab === 'learn')
-            {
-                msg.text = "I don't want to learn";
             }
             if (selectedTab === 'people')
             {
@@ -212,10 +196,6 @@ $(document).ready(function () {
             {
                 msg.text = "I want to have fun some more";
             }
-            if (selectedTab === 'learn')
-            {
-                msg.text = "I want to learn more";
-            }
             if (selectedTab === 'people')
             {
                 msg.text = "I want to meet people some more";
@@ -257,10 +237,6 @@ $(document).ready(function () {
             if (selectedTab === 'fun')
             {
                 msg.text = "I don't want to have fun anymore";
-            }
-            if (selectedTab === 'learn')
-            {
-                msg.text = "I don't want to learn anymore";
             }
             if (selectedTab === 'people')
             {
@@ -336,18 +312,6 @@ $(document).ready(function () {
         $(this).addClass('selected_block');
         itemOneSelected = true;
         selectedTab = 'fun';
-    });
-    $('#learn').click(function() {
-        if (itemOneSelected && selectedTab == "learn")
-        {
-            window.location.href = 'learn.html';
-        }
-        activityMsg.text = "Learn";
-        speechSynthesis.speak(activityMsg);
-        $('.selected_block').removeClass('selected_block');
-        $(this).addClass('selected_block');
-        itemOneSelected = true;
-        selectedTab = 'learn';
     });
     $('#people').click(function() {
         if (itemOneSelected && selectedTab == "people")
